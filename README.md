@@ -6,7 +6,7 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 [![Build Status](https://travis-ci.com/memetics19/Django-Recipe-API.svg?branch=master)](https://travis-ci.com/memetics19/Django-Recipe-API)
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://cirrus-ci.com/build/6236223771508736)
 
-# How to setup the localserver 
+# How to Setup the Local Server 
 
 1. Clone the Repo by following command
   `git clone git@github.com:memetics19/Django-Recipe-API.git` .
