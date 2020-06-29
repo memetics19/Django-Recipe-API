@@ -7,7 +7,7 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://cirrus-ci.com/build/6236223771508736)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/memetics19/Django-recipe-api)
-[Pull Request](https://github.com/memetics19/Django-Recipe-API/pulls)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/memetics19/Django-Recipe-API)
 
 # How to Setup the Local Server 
 
