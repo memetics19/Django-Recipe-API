@@ -27,6 +27,8 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 
 # API Endpoints
 `api/auth/create` (i'll change the endpoint later)
+
+
 `api/auth/token`
 
 # Dependencies
