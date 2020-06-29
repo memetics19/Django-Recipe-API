@@ -10,5 +10,8 @@ exclude =
   ./core/tests/test_admin.py
   ./core/tests/test_commands.py
   ./core/management/commands/wait_for_db.py
-  
-  
+  ./user/tests/test_user_api.py
+  ./user/serializers.py
+  ./user/views.py
+  ./user/urls.py
+  ./app/urls.py
