@@ -19,11 +19,17 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 
 2. Install Docker if you haven't installed it, yet. You can install by clicking this  <a href="https://www.docker.com/">link</a>
 
-3. Use this command to run the server
+3. Use this command to install the dependencies 
    `docker-compose build`
+4. Use this command to run the server 
+   `docker-compose up`
+5. Navigate to `127.0.0.1:5000`
 
-4. Navigate to `localhost:5000`
+# API Endpoints
+`api/auth/create` (i'll change the endpoint later)
 
+
+`api/auth/token`
 
 # Dependencies
 
