@@ -2,6 +2,9 @@
 
 A REST-Full API built with Django Rest Framework. The API will retrieve recipes and ingredients needed for the particular recipe with user authentication and authentication handling. 
 
+![Django](https://miro.medium.com/max/2400/1*HVKOLLX7wprRbHTl2IPDcQ.png)
+![Django Rest Framework](https://files.realpython.com/media/djang-rest-framework-logo.37921ea75c09.png)
+
 
 [![Build Status](https://travis-ci.com/memetics19/Django-Recipe-API.svg?branch=master)](https://travis-ci.com/memetics19/Django-Recipe-API)
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://cirrus-ci.com/build/6236223771508736)
