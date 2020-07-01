@@ -38,3 +38,6 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 1. Django 
 2. DjangoRestFrameWork
 3. Flake8
+
+# Note
+Docker does'nt work on Windows 10 Home Edition 
