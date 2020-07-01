@@ -29,8 +29,7 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 5. Navigate to `127.0.0.1:5000`
 
 # API Endpoints
-`api/auth/create` (i'll change the endpoint later)
-
+`api/auth/create` 
 
 `api/auth/token`
 
