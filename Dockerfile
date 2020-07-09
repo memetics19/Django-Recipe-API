@@ -1,7 +1,10 @@
 FROM python:3.7-alpine
 MAINTAINER Shreeda Bhat M 
 
+
+ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
+ENV DEBUG 0
 
 
 COPY ./requirements.txt /requirements.txt
@@ -14,3 +17,8 @@ COPY ./app /app
 
 RUN adduser -D user
 USER user
+
+RUN python manage.py collectstatic --noinput
+
+
+CMD gunicorn hello_django.wsgi:application --bind 0.0.0.0:$PORT
