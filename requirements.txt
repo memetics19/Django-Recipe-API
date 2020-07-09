@@ -1,3 +1,5 @@
 django 
 djangorestframework 
 flake8
+gunicorn
+whitenoise
