@@ -33,6 +33,10 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 
 `api/auth/token`
 
+# Planning - TO DO
+ 
+To know what's the further development of the project Check <a href = "TODO/Notes.md">Notes</a>
+
 # Dependencies
 
 1. Django 
