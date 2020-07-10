@@ -37,6 +37,7 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 # One Click Deployment
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Deploy to Azure](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png)](https://azuredeploy.net/)
 
 
 # Planning - TO DO
