@@ -4,4 +4,4 @@
   run:
     web: gunicorn app.wsgi:application --bind 0.0.0.0:$PORT
   release: 
-    web: python manage.py migrate
+    image: python manage.py migrate
