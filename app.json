@@ -21,6 +21,12 @@
         "description": "Debug mode or not.",
         "required": false,
         "value": "False"
+    },
+    "DISABLE_COLLECTSTATIC": {
+        "description": "Disable the CollectStatic",
+        "required": false,
+        "value": "1"
+    }
     }
     }
   }
