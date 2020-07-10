@@ -7,3 +7,4 @@
     image: web
     command: 
       - cd ./app python manage.py migrate
+      - heroku config:set DISABLE_COLLECTSTATIC=1
