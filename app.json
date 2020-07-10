@@ -6,10 +6,6 @@
   "keywords": ["python", "django" ],
   "addons": [ "heroku-postgresql" ],
     "env": {
-      "SECRET_TOKEN": {
-        "description": "A secret key for verifying the integrity of signed cookies.",
-        "generator": "secret"
-      },
       "DISABLE_COLLECTSTATIC": {
         "description": "Disable Collectstatic",
         "value": "1"
