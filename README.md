@@ -13,7 +13,7 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/memetics19/Django-Recipe-API)
 ![GitHub followers](https://img.shields.io/github/followers/memetics19?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/memetics19/django-recipe-api?style=social)
-[![Heroku](https://heroku-badge.herokuapp.com/?app=http://api-recipe-django.herokuapp.com/)]
+[![Heroku](https://heroku-badge.herokuapp.com/?app=http://api-recipe-django.herokuapp.com/api/create/create/)]
 
 # How to Setup the Local Server 
 
