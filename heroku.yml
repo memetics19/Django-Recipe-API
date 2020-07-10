@@ -3,6 +3,5 @@
         web: Dockerfile
   run:
     web: gunicorn app.wsgi:application --bind 0.0.0.0:$PORT
-  release:
-    image: web
-    release: python manage.py migrate
+  release: python manage.py migrate
+    web: gunicorn app.wsgi --log-file -
