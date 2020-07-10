@@ -24,7 +24,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='foo')
 
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = ['http://api-recipe-django.herokuapp.com/','127.0.0.1:5000','localhost:5000']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
