@@ -1,10 +1,10 @@
-    version: "3.3"
+version: "3.3"
 
 
-    services:
-        app:
-            build:
-                context: . 
+services:
+    app:
+        build:
+            context: . 
         ports:
             - "5000:5000"
         volumes:
