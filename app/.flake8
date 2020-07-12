@@ -1,0 +1,18 @@
+[flake8]
+exclude = 
+  migrations,
+  __pycache__,
+  manage.py,
+  settings.py,
+  admin.py 
+  models.py
+  version.py
+  ./core/tests/test_models.py
+  ./core/tests/test_admin.py
+  ./core/tests/test_commands.py
+  ./core/management/commands/wait_for_db.py
+  ./user/tests/test_user_api.py
+  ./user/serializers.py
+  ./user/views.py
+  ./user/urls.py
+  ./app/urls.py
