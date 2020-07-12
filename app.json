@@ -1,0 +1,14 @@
+{
+    "name": "Django recipe api",
+    "description": "A Django recipe API",
+    "image": "heroku/python",
+    "repository": "",
+    "keywords": ["python", "django" ],
+    "addons": [ "heroku-postgresql" ],
+      "env": {
+        "DISABLE_COLLECTSTATIC": {
+          "description": "Disable Collectstatic",
+          "value": "1"
+        }
+      }
+    }
