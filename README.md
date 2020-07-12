@@ -30,10 +30,22 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 5. Navigate to `127.0.0.1:5000`
 
 # API Endpoints
-`api/auth/create` 
 
-`api/auth/token`
+Create Profile: `api/create/create` 
 
+Create Token: `api/create/token`
+
+Modify Account: `api/create/me`
+
+<<<<<<< HEAD
+# How to run tests
+
+Running the tests can be done by following command 
+
+`docker-compose run app sh -c "python manage.py test && flake8"`
+
+=======
+>>>>>>> 2d5ef6069ce4710ae70ce00bbddb8ea80041d35c
 # One Click Deployment
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
