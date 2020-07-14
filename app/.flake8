@@ -16,3 +16,7 @@ exclude =
   ./user/views.py
   ./user/urls.py
   ./app/urls.py
+  ./recipe/tests/test_tags.py
+  ./recipe/views.py
+  ./recipe/serializers.py
+  ./recipe/urls.py
