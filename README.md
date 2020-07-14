@@ -37,6 +37,8 @@ Create Token: `api/create/token`
 
 Modify Account: `api/create/me`
 
+Recipe Tags: `api/recipe/`
+
 # How to run tests
 
 Running the tests can be done by following command 
