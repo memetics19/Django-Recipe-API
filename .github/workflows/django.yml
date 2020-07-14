@@ -28,6 +28,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       with:
-        path: ~./app
+        path: 
+          - 'app/**'
         run: |
           python manage.py test
