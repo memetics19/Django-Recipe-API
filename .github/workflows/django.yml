@@ -16,6 +16,7 @@ jobs:
         python-version: [3.6, 3.7, 3.8]
 
     steps:
+
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
@@ -26,5 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
-      run: |
-        python manage.py test
+      with:
+        path: ~./app
+        run: |
+          python manage.py test
