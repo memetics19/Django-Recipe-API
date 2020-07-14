@@ -42,7 +42,7 @@ class PrivateTagsApiTests(TestCase):
 
         res = self.client.get(TAGS_URL)
 
-        tags = Tag.objects.all().order_by('-name')
+        tags = Tag.objects.all().order_by('name')
         serializer = TagSerializer(tags,many=True)
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.data, serializer.data)
@@ -79,4 +79,5 @@ class PrivateTagsApiTests(TestCase):
         res = self.client.post(TAGS_URL, payload)
         
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
+        
         
