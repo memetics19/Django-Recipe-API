@@ -12,8 +12,10 @@ A REST-Full API built with Django Rest Framework. The API will retrieve recipes 
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/memetics19/Django-recipe-api)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/memetics19/Django-Recipe-API)
 ![GitHub followers](https://img.shields.io/github/followers/memetics19?style=social)
-![GitHub stars](https://img.shields.io/github/stars/memetics19/django-recipe-api?style=social)
-
+![GitHub repo size](https://img.shields.io/github/repo-size/memetics19/Django-Recipe-Api)
+[![GitHub watchers](https://img.shields.io/github/watchers/memetics19/Django-Recipe-API.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/memetics19/Django-Recipe-API/watchers/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://GitHub.com/memetics19/Django-Recipe-API/graphs/contributors/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 # How to Setup the Local Server 
 
