@@ -63,6 +63,9 @@ To know what's the further development of the project Check <a href = "TODO/Note
 1. Django 
 2. DjangoRestFrameWork
 3. Flake8
+`Heroku Dependencies`
+4. Gunicorn
+5. Whitenoise 
 
 # Note
 Docker does'nt work on Windows 10 Home Edition 
