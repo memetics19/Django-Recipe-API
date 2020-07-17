@@ -6,6 +6,10 @@ This is a note for further development of this project
 
 2. Creating a code coverage for the present application.
 
+## What needed now 
+
+1. Postgresql
+2. Removing the github workflow 
 
 
 ## Contribution 
@@ -13,4 +17,3 @@ This is a note for further development of this project
 Anybody can contribute. Open to contribute
 
 Please make sure to PR 
-
