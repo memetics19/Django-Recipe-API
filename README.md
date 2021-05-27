@@ -52,7 +52,7 @@ Running the tests can be done by following command
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 [![Deploy to Azure](https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deploybutton.png)](https://azuredeploy.net/)
 [![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/memetics19/Django-Recipe-API)
-
+[![Deploy](https://deploy.zeet.co/Django-Recipe-API.svg)](https://deploy.zeet.co/?url=https://github.com/memetics19/Django-Recipe-API)
 
 # Planning - TO DO
  
