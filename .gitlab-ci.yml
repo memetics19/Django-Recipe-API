@@ -1,4 +1,4 @@
-image: python3:latest
+image: python:3.7
 
 stages:
   - production
