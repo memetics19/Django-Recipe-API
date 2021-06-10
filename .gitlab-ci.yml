@@ -3,7 +3,10 @@ image: python:3.7
 stages:
   - unit-test
   - production
+  - docisfy
 
+
+  
 unit-test:
   stage: unit-test
   script:
@@ -19,6 +22,11 @@ unit-test:
 production:
   type: deploy
   stage: production
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo -e "$SSH_PRIVATE" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >  ~/.ssh/config'
   script:
   - apt-get update -qy
   - apt-get install -y ruby-dev
@@ -31,3 +39,8 @@ production:
    - unit-test
   only:
     - main
+
+docisfy:
+  type: deploy
+  stage: docisfy
+
