@@ -3,7 +3,7 @@ image: python:3.7
 stages:
   - unit-test
   - production
-  - docisfy
+
 
 
   
@@ -16,8 +16,8 @@ unit-test:
    - apt-get update -qy
    - apt-get install -y python-dev python-pip
    - pip install -r requirements.txt
-   - cd app && python manage.py test
-
+   - cd app && python manage.py test   
+  
   
 production:
   type: deploy
@@ -34,13 +34,12 @@ production:
   - apt-get update -qy
   - apt-get install -y python-dev python-pip
   - pip install -r requirements.txt
-  - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+  - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY    
+  - bash .gitlab-deploy.sh   
   dependencies: 
    - unit-test
   only:
     - main
 
-docisfy:
-  type: deploy
-  stage: docisfy
+
 
