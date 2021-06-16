@@ -1,6 +1,15 @@
 version: '3.7'
 
-services:
+services: 
+  nginx:
+    build: ./nginx
+    volumes:
+      - static:/static
+    ports:
+      - "80:8000"
+    depends_on:
+      - recipe
+
   recipe:
     volumes:
       - static:/static
@@ -8,15 +17,6 @@ services:
       context: .
     ports:
       - "8000:8000"
-  
-  nginx:
-    build: ./nginx
-    volumes:
-      - static:/static
-    ports:
-      - "8001:8000"
-    depends_on:
-      - recipe
 
 volumes:
     static:
