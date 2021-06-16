@@ -3,4 +3,3 @@ djangorestframework
 flake8
 gunicorn
 whitenoise
-uwsgi
