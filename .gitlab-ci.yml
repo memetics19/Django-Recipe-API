@@ -3,9 +3,7 @@ image: python:3.7
 stages:
   - production
 
-
-
-   
+  
 production:
   type: deploy
   stage: production
@@ -17,7 +15,7 @@ production:
   script: 
   - bash .gitlab-deploy.sh   
   only:
-    - master
+    - main
 
 
 
