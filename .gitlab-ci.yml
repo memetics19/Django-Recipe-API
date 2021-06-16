@@ -1,24 +1,11 @@
 image: python:3.7
 
 stages:
-  - unit-test
   - production
 
 
 
-  
-unit-test:
-  stage: unit-test
-  script:
-   - apt-get update -qy
-   - apt-get install -y ruby-dev
-   - gem install dpl
-   - apt-get update -qy
-   - apt-get install -y python-dev python-pip
-   - pip install -r requirements.txt
-   - cd app && python manage.py test   
-  
-  
+   
 production:
   type: deploy
   stage: production
@@ -27,19 +14,10 @@ production:
     - echo -e "$SSH_PRIVATE" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >  ~/.ssh/config'
-  script:
-  - apt-get update -qy
-  - apt-get install -y ruby-dev
-  - gem install dpl
-  - apt-get update -qy
-  - apt-get install -y python-dev python-pip
-  - pip install -r requirements.txt
-  - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY    
+  script: 
   - bash .gitlab-deploy.sh   
-  dependencies: 
-   - unit-test
   only:
-    - main
+    - master
 
 
 
