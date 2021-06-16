@@ -8,6 +8,13 @@ services:
       context: .
     ports:
       - "8000:8000"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=app
+      - DB_USER=postgres
+      - DB_PASS=supersecretpassword
+    depends_on:
+        - db
   nginx:
     build: ./nginx
     volumes:
@@ -16,6 +23,13 @@ services:
       - "80:80"
     depends_on:
       - recipe
+   
+  db:
+    image: postgres:10-alpine
+    environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=supersecretpassword
 volumes:
     static:
                            
