@@ -8,5 +8,5 @@ array=(${string//,/ })
 for i in "${!array[@]}"; do
   echo "Deploying information to EC2 and Gitlab"
   echo "Deploy project on server ${array[i]}"
-  ssh ubuntu@${array[i]}  "cd django-recipe-api && git pull origin main && sudo docker-compose up -d "
+  ssh ubuntu@${array[i]}  "cd django-recipe-api && git pull origin main && sudo docker-compose build && sudo docker-compose up -d "
 done 
