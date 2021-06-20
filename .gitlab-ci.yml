@@ -16,7 +16,7 @@ production:
   script:
   - bash .gitlab-deploy.sh   
   only:
-    - shreeda
+    - main
     
 
 
