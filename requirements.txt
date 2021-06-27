@@ -3,3 +3,4 @@ djangorestframework
 flake8
 gunicorn
 whitenoise
+psycopg2

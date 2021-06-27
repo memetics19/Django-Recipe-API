@@ -2,8 +2,6 @@
 
 A REST-Full API built with Django Rest Framework. The API will retrieve recipes and ingredients needed for the particular recipe with user authentication and authentication handling. 
 
-Trigger 
-
 
 ![Django Rest Framework](https://files.realpython.com/media/djang-rest-framework-logo.37921ea75c09.png)
 
@@ -76,11 +74,3 @@ Docker does'nt work on Windows 10 Home Edition
 
 
 Trigger this 
-
-trigger 
-trigger this scdsvddsvdsvdsvsv
-
-
-trigger this sssss
-
-sdvsddvdvdbdbffdfbdfbdbdbddbdbd

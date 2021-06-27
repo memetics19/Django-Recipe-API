@@ -1,21 +1,21 @@
-FROM python:3.7-alpine
-MAINTAINER Shreeda Bhat M 
+FROM python:3.8.5-alpine
 
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-ENV DEBUG 0
-
+RUN pip install --upgrade pip
 
 COPY ./requirements.txt /requirements.txt
+RUN apk add --update --no-cache postgresql-client jpeg-dev
+RUN apk add --update --no-cache --virtual .tmp-build-deps \
+      gcc libc-dev linux-headers postgresql-dev musl-dev zlib zlib-dev
+RUN pip install -r /requirements.txt
+RUN apk del .tmp-build-deps
+
+
 RUN pip install -r requirements.txt
 
-RUN mkdir /app
-WORKDIR /app
 COPY ./app /app
 
+WORKDIR /app
 
-RUN adduser -D user
-USER user
 
-CMD gunicorn app.wsgi:application --bind 0.0.0.0:$PORT
+CMD ["gunicorn", "app.wsgi", ":application", "--bind", "0.0.0.0:8081"]
+

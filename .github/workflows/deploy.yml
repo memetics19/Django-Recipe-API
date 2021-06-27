@@ -1,9 +1,7 @@
-
 name: Django Recipe API 
 
-on:
-  push:
-    branches: [ master ]
+on: 
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,4 +18,3 @@ jobs:
 
       - name: Migartions
         run: heroku run python manage.py makemigrations  && heroku python manage.py migrate 
-

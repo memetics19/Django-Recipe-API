@@ -1,16 +1,23 @@
-image: python3:latest
+image: python:3.7
 
 stages:
   - production
+
+  
   
 production:
   type: deploy
   stage: production
-  image: ruby:latest
+  before_script:
+    - mkdir -p ~/.ssh
+    - echo -e "$SSH_PRIVATE" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >  ~/.ssh/config'
   script:
-    - apt-get update -qy
-    - apt-get install -y ruby-dev
-    - gem install dpl
-    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+  - bash .gitlab-deploy.sh   
   only:
-    - master
+    - main
+    
+
+
+
