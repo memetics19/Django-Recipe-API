@@ -2,6 +2,8 @@
 
 A REST-Full API built with Django Rest Framework. The API will retrieve recipes and ingredients needed for the particular recipe with user authentication and authentication handling. 
 
+Sandeep Hacked here. Follow me on twitter @sandeep_sriniv
+
 Trigger 
 
 
